@@ -23,12 +23,12 @@ if(${LLVM_BUILD_RUNTIME})
   if(NOT MSVC)
     # libc++ uses the libc++abi target names so libc++abi should be added
     # first.
-    add_llvm_external_project(libcxxabi)
-    add_llvm_external_project(libcxx)
-    add_llvm_external_project(libunwind)
+    #add_llvm_external_project(libcxxabi)
+    #add_llvm_external_project(libcxx)
+    #add_llvm_external_project(libunwind)
   endif()
   if(NOT LLVM_BUILD_EXTERNAL_COMPILER_RT)
-    add_llvm_external_project(compiler-rt)
+    #add_llvm_external_project(compiler-rt)
   endif()
 endif()
 

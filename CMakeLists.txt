@@ -641,6 +641,13 @@ endif()
 
 # Put this before tblgen. Else we have a circular dependence.
 add_subdirectory(lib/Support)
+
+add_llvm_external_project(projects/libcxxabi)
+add_llvm_external_project(projects/libcxx)
+add_llvm_external_project(projects/libunwind)
+add_llvm_external_project(projects/compiler-rt)
+
+
 add_subdirectory(lib/TableGen)
 
 add_subdirectory(utils/TableGen)
